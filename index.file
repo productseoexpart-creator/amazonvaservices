@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Etsy Service Provider</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:#0b0f1a;
+    color:white;
+}
+
+header {
+    background: linear-gradient(90deg,#0b0f1a,#1a0b1f);
+    padding:60px;
+    text-align:center;
+}
+
+h1 {
+    font-size:48px;
+    color:#ff004c;
+}
+
+.btn {
+    background:#ff004c;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section {
+    padding:50px;
+    text-align:center;
+}
+
+.services {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:#121826;
+    margin:10px;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+}
+
+footer {
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Etsy Service Provider</h1>
+    <p>Grow Your Etsy Store With Experts</p>
+    <a href="#" class="btn">Get Started</a>
+</header>
+
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">PPC Campaign</div>
+        <div class="card">Etsy SEO</div>
+        <div class="card">Print On Demand</div>
+        <div class="card">Inventory Handling</div>
+        <div class="card">Order Management</div>
+        <div class="card">Full Store Management</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>About Us</h2>
+    <p>I’m Usman, an Etsy expert helping you grow your business.</p>
+</div>
+
+<div class="section">
+    <h2>Why Choose Us</h2>
+    <p>Professional Service | Fast Delivery | Proven Results</p>
+</div>
+
+<div class="section">
+    <h2>Ready to Grow?</h2>
+    <a href="#" class="btn">Contact Now</a>
+</div>
+
+<footer>
+    <p>© 2026 Usman - Etsy Services</p>
+</footer>
+
+</body>
+</html>
