@@ -12,8 +12,9 @@ body {
   line-height: 1.7;
 }
 
+/* GENERAL */
 section {
-  padding: 60px 10%;
+  padding: 80px 8%;
 }
 
 h1, h2 {
@@ -22,40 +23,55 @@ h1, h2 {
 
 p {
   color: #444;
+  max-width: 800px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.container img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 10px;
-}
-
-.text {
-  flex: 1;
-}
-
+/* HERO */
 .hero {
   background: url('Hero.png') no-repeat center/cover;
   color: white;
   text-align: center;
-  padding: 120px 20px;
+  padding: 140px 20px;
 }
 
 .hero h1 {
   font-size: 48px;
 }
 
+/* FULL IMAGE */
+.full-image {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.full-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* CONTENT */
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* CTA */
+.cta {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 14px 30px;
   background: #ff9900;
   color: black;
   text-decoration: none;
@@ -63,15 +79,19 @@ p {
   border-radius: 5px;
 }
 
-ul {
-  padding-left: 20px;
-}
-
+/* FOOTER */
 .footer {
-  background: #111;
+  background: #000;
   color: white;
   text-align: center;
   padding: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
 }
 </style>
 </head>
@@ -81,180 +101,149 @@ ul {
 <!-- HERO -->
 <section class="hero">
   <h1>Scale Your Amazon Business with Expert VA Support</h1>
-  <p>
-    At NN.INFLUNCER, we provide premium Amazon VA services designed to help sellers grow faster,
-    operate smarter, and increase profits without hiring in-house teams.
-  </p>
+  <p>Premium Amazon VA services to grow faster and increase profits</p>
   <a href="#" class="btn">Get Started</a>
 </section>
 
 <!-- ABOUT -->
-<section>
-  <div class="container">
-    <img src="3rd.png">
-    <div class="text">
-      <h2>About NN.INFLUNCER – Trusted Amazon VA Agency</h2>
-      <p>
-        NN.INFLUNCER is a results-driven Amazon VA agency delivering high-performance virtual assistant
-        services for Amazon sellers worldwide.
-      </p>
-      <ul>
-        <li>Amazon Seller Central expertise</li>
-        <li>Product research & listing optimization</li>
-        <li>Customer service operations</li>
-        <li>PPC campaign management</li>
-      </ul>
-      <p>
-        Unlike freelancers, we provide structured systems, accountability, and consistent performance
-        to drive measurable growth.
-      </p>
-    </div>
-  </div>
+<section class="content">
+  <h2>About NN.INFLUNCER – Trusted Amazon VA Agency</h2>
+  <p>NN.INFLUNCER is a results-driven Amazon VA agency delivering high-performance virtual assistant services.</p>
+  <ul>
+    <li>Amazon Seller Central expertise</li>
+    <li>Product research & optimization</li>
+    <li>Customer service operations</li>
+    <li>PPC campaign management</li>
+  </ul>
 </section>
+
+<div class="full-image">
+  <img src="3rd.png">
+</div>
 
 <!-- SERVICES -->
-<section>
-  <div class="container">
-    <div class="text">
-      <h2>Our Amazon VA Services – Complete Business Support</h2>
+<section class="content">
+  <h2>Our Amazon VA Services – Complete Business Support</h2>
 
-      <h3>Core Services:</h3>
-      <ul>
-        <li>Product listing creation & optimization</li>
-        <li>Keyword research (SEO-focused)</li>
-        <li>Inventory management</li>
-        <li>PPC campaign setup & optimization</li>
-        <li>Competitor analysis</li>
-      </ul>
+  <h3>Core Services:</h3>
+  <ul>
+    <li>Product listing optimization</li>
+    <li>Keyword research</li>
+    <li>Inventory management</li>
+    <li>PPC campaigns</li>
+    <li>Competitor analysis</li>
+  </ul>
 
-      <h3>Advanced Services:</h3>
-      <ul>
-        <li>Account health management</li>
-        <li>A+ content coordination</li>
-        <li>Brand registry support</li>
-        <li>Storefront design assistance</li>
-      </ul>
-    </div>
-    <img src="4th.png">
-  </div>
+  <h3>Advanced Services:</h3>
+  <ul>
+    <li>Account health management</li>
+    <li>A+ content</li>
+    <li>Brand registry</li>
+    <li>Storefront design</li>
+  </ul>
 </section>
+
+<div class="full-image">
+  <img src="4th.png">
+</div>
 
 <!-- CUSTOMER SERVICE -->
-<section>
-  <div class="container">
-    <img src="5th.png">
-    <div class="text">
-      <h2>Amazon Customer Service VA – 24/7 Support</h2>
-      <p>Customer experience is everything on Amazon. We ensure your buyers stay happy and loyal.</p>
-      <ul>
-        <li>Buyer messages & inquiries</li>
-        <li>Order issues & refunds</li>
-        <li>Negative feedback management</li>
-        <li>Return & replacement handling</li>
-      </ul>
-    </div>
-  </div>
+<section class="content">
+  <h2>Amazon Customer Service VA – 24/7 Support</h2>
+  <ul>
+    <li>Buyer messages</li>
+    <li>Refund handling</li>
+    <li>Feedback management</li>
+    <li>Returns & replacements</li>
+  </ul>
 </section>
+
+<div class="full-image">
+  <img src="5th.png">
+</div>
 
 <!-- RESPONSIBILITIES -->
-<section>
-  <div class="container">
-    <div class="text">
-      <h2>Amazon VA Responsibilities</h2>
-      <ul>
-        <li>Daily account monitoring</li>
-        <li>Listing updates and optimization</li>
-        <li>Sales tracking & reporting</li>
-        <li>Customer communication</li>
-        <li>Advertising adjustments</li>
-        <li>Competitor tracking</li>
-      </ul>
-    </div>
-    <img src="6th.png">
-  </div>
+<section class="content">
+  <h2>Amazon VA Responsibilities</h2>
+  <ul>
+    <li>Daily monitoring</li>
+    <li>Listing updates</li>
+    <li>Sales tracking</li>
+    <li>Ad optimization</li>
+    <li>Competitor tracking</li>
+  </ul>
 </section>
 
-<!-- USA SERVICE -->
-<section>
-  <div class="container">
-    <img src="7th.png">
-    <div class="text">
-      <h2>VA Service for Amazon in USA</h2>
-      <p>
-        Our services are tailored for the US marketplace with deep understanding of customer behavior,
-        policies, and competitive pricing strategies.
-      </p>
-    </div>
-  </div>
+<div class="full-image">
+  <img src="6th.png">
+</div>
+
+<!-- USA -->
+<section class="content">
+  <h2>VA Service for Amazon in USA</h2>
+  <p>We understand US market behavior, policies, and competitive strategies.</p>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section>
-  <div class="container">
-    <div class="text">
-      <h2>Why Choose Our Amazon Expert VA Team</h2>
-      <ul>
-        <li>Experienced Amazon expert VA team</li>
-        <li>Proven growth strategies</li>
-        <li>Transparent communication</li>
-        <li>Dedicated account management</li>
-        <li>Scalable solutions</li>
-      </ul>
-    </div>
-    <img src="8th.png">
-  </div>
+<div class="full-image">
+  <img src="7th.png">
+</div>
+
+<!-- WHY US -->
+<section class="content">
+  <h2>Why Choose Our Amazon Expert VA Team</h2>
+  <ul>
+    <li>Experienced team</li>
+    <li>Growth strategies</li>
+    <li>Transparent communication</li>
+    <li>Scalable solutions</li>
+  </ul>
 </section>
+
+<div class="full-image">
+  <img src="8th.png">
+</div>
 
 <!-- HIRING -->
-<section>
-  <div class="container">
-    <img src="11th.png">
-    <div class="text">
-      <h2>Amazon VA Hiring – Skip the Hassle</h2>
-      <p>
-        Get pre-trained Amazon VAs with no hiring headaches, immediate productivity,
-        and fully managed performance.
-      </p>
-    </div>
-  </div>
+<section class="content">
+  <h2>Amazon VA Hiring – Skip the Hassle</h2>
+  <p>Get pre-trained VAs with no hiring headaches and instant productivity.</p>
 </section>
 
-<!-- AGENCY VS FREELANCERS -->
-<section>
-  <div class="container">
-    <div class="text">
-      <h2>Amazon Upwork vs Agency</h2>
-      <p>
-        Unlike freelancers, we provide structured workflows, quality control systems,
-        and long-term reliability.
-      </p>
-    </div>
-    <img src="12th.png">
-  </div>
+<div class="full-image">
+  <img src="11th.png">
+</div>
+
+<!-- AGENCY -->
+<section class="content">
+  <h2>Amazon Upwork vs Agency</h2>
+  <p>We provide structured workflows, quality control, and reliability.</p>
 </section>
+
+<div class="full-image">
+  <img src="12th.png">
+</div>
 
 <!-- PROCESS -->
-<section>
-  <h2>Our Process – Simple, Fast, Effective</h2>
+<section class="content">
+  <h2>Our Process</h2>
   <ul>
-    <li>Consultation & business analysis</li>
-    <li>VA assignment based on your needs</li>
-    <li>Onboarding & system integration</li>
-    <li>Daily execution & reporting</li>
-    <li>Continuous optimization</li>
+    <li>Consultation</li>
+    <li>VA assignment</li>
+    <li>Onboarding</li>
+    <li>Execution</li>
+    <li>Optimization</li>
   </ul>
 </section>
 
 <!-- CTA -->
-<section class="hero">
+<section class="cta">
   <h1>Start Scaling Your Amazon Business Today</h1>
-  <p>Book a free consultation and grow faster with NN.INFLUNCER.</p>
   <a href="#" class="btn">Book Free Consultation</a>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
-  <p>© 2026 NN.INFLUNCER | Amazon VA Services</p>
+  <p>© 2026 NN.INFLUNCER</p>
 </div>
 
 </body>
